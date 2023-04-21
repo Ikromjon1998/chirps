@@ -6,8 +6,8 @@ fixture `Create Chirp`
 test('Register a new user', async t => {
     // Fill in the login form
     await t
-        .typeText('#email', 'example@iu.org')
-        .typeText('#password', '12345678io')
+        .typeText('#email', 'test@example.com')
+        .typeText('#password', 'password')
         .setTestSpeed(0.1)
         .click(Selector('button').withText('Log in'));
 

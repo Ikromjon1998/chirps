@@ -9,8 +9,8 @@ test('User can login successfully', async (t) => {
     const submitButton = Selector('button').withText('Log in');
 
     await t
-        .typeText(emailInput, 'example@iu.org')
-        .typeText(passwordInput, '12345678io')
+        .typeText(emailInput, 'test@example.com')
+        .typeText(passwordInput, 'password')
         .click(rememberMeCheckbox)
         .click(submitButton);
 
